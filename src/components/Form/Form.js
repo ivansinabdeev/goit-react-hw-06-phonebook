@@ -2,8 +2,8 @@ import React, { useState } from "react";
 // import PropTypes from "prop-types";
 import s from "./Form.module.css";
 import { useSelector, useDispatch } from "react-redux";
-import phonebookActions from "../../redux/phonebook/actions";
-import { getContacts } from "../../redux/phonebook/selectors";
+import phonebookActions from "../../redux/phonebook/phonebook-actions";
+import { getContacts } from "../../redux/phonebook/phonebook-selectors";
 
 export default function ContactForm() {
   const [name, setName] = useState("");

@@ -2,8 +2,11 @@ import React from "react";
 // import PropTypes from "prop-types";
 import s from "./ContactList.module.css";
 import { useSelector, useDispatch } from "react-redux";
-import phonebookActions from "../../redux/phonebook/actions";
-import { getContacts, getFilter } from "../../redux/phonebook/selectors";
+import phonebookActions from "../../redux/phonebook/phonebook-actions";
+import {
+  getContacts,
+  getFilter,
+} from "../../redux/phonebook/phonebook-selectors";
 
 export default function ContactList() {
   const contacts = useSelector(getContacts);

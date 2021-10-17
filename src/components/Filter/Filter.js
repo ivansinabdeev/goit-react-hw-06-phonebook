@@ -2,8 +2,8 @@ import React from "react";
 // import PropTypes from "prop-types";
 
 import { useSelector, useDispatch } from "react-redux";
-import phonebookActions from "../../redux/phonebook/actions";
-import { getFilter } from "../../redux/phonebook/selectors";
+import phonebookActions from "../../redux/phonebook/phonebook-actions";
+import { getFilter } from "../../redux/phonebook/phonebook-selectors";
 
 export default function Filter() {
   const inputValue = useSelector(getFilter);

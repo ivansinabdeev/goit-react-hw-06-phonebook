@@ -1,6 +1,6 @@
 import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
 
-import phonebookReducer from "./phonebook/reducer";
+import phonebookReducer from "./phonebook/phonebook-reducer";
 import {
   persistStore,
   persistReducer,
